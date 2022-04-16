@@ -1,0 +1,106 @@
+html{
+    background: url("background.jpg") no-repeat;
+	background-size: cover;
+   	height: 100%;
+}
+
+body{
+	background-color: transparent;
+}
+
+#registration-form{
+	max-width: 800px;
+	margin: 120px auto;
+}
+
+#registration-form .image{
+	float:left;
+	background-image: url("https://i.postimg.cc/52QTryyy/logo-ofisial.png");
+	height: 500px;
+	width: 50%;
+	background-size: cover;
+	background-position: 25%;
+}
+
+#registration-form .frm{
+	float:right;
+	height: 500px;
+    width: 50%;
+    min-width: 250px;
+    padding: 0 35px;
+    background-size: 100% 100%;
+    background-color: white;
+}
+.container-form-tol{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cont{
+	max-width: 500px;
+	padding: 2rem;
+	background-color: white;
+	color: black;
+}
+.form1{
+	width: 100%;
+	flex-direction: column;
+}
+.form1 label{
+	font-size: 1.5em;
+	width: 100%;
+}
+.form-all{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+#registration-form h1{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.btn{
+	margin: 1em 0 0 0;
+}
+#registration-form .form-control ,.form-all input{
+	width: 90%;
+	padding: 12px 20px;
+	height: auto;
+}
+
+@media screen and (max-width: 700px){
+	#registration-form .image{
+		width: 30%;
+	    background-position: 60%;
+	}
+
+	#registration-form .frm{
+		width: 70%;
+	}
+
+	#registration-form .form-control{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#registration-form .image{
+		display: none;
+	}
+
+	#registration-form .frm{
+		width: 100%;
+	}
+
+	#registration-form h1{
+		text-align: center;
+	}
+
+	#registration-form .btn{
+		width: 100%;
+		margin-top: 20px;
+	}
+}
