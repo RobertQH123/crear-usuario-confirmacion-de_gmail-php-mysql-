@@ -30,11 +30,11 @@ Function enviarMailConfimr($correo,$numero){
         $mail->SMTPSecure = 'tls';                                           
         $mail->Host       = 'smtp.gmail.com';                     
         $mail->SMTPAuth   = true;                                   
-        $mail->Username   = 'tuCorreo@tuCorreo.com';   //Correo de deon se envia                   
+        $mail->Username   = 'tuCorreo@tuCorreo.com';   //Tu correo                  
         $mail->Password   = 'tuContraseña';               //contraseña                     
         $mail->Port       = 587;
         $mail->CharSet = 'UTF-8';                           
-        $mail->setFrom('tuCorreo@tuCorreo.com', 'Robert');  //(Correo de deon se envia, nombre)
+        $mail->setFrom('tuCorreo@tuCorreo.com', 'Robert');  //(Tu correo, nombre)
         $mail->addAddress($para);    
         $mail->SMTPKeepAlive = true;  
         $mail->Mailer = "smtp"; 
